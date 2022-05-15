@@ -10,13 +10,12 @@ RUN apt update -y && \
                    nodejs \
                    mina-generate-keypair=1.3.0-9b0369c
 
-RUN mkdir /mina
-WORKDIR /mina
+WORKDIR /root
 
 RUN npm install -g zkapp-cli
 
-RUN mkdir /mina/keys
-RUN chmod 700 /mina/keys
+RUN mkdir /root/keys
+RUN chmod 700 /root/keys
 
 COPY .mina-env .mina-env
 				

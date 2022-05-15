@@ -20,15 +20,15 @@ docker run -it --rm --name mina --entrypoint bash -p 8302:8302 mina
 Generate a key pair and validate the pair:
 
 ```
-mina-generate-keypair --privkey-path /mina/keys/my-wallet
-mina-validate-keypair --privkey-path /mina/keys/my-wallet
+mina-generate-keypair --privkey-path /root/keys/my-wallet
+mina-validate-keypair --privkey-path /root/keys/my-wallet
 ```
 
 Open the Mina Node environment, called `.mina-env` (included in the repo), and update the content by
 adding your passphrase for the keys you generated. 
 
 ```
-vim /mina/.mina-env
+vim /root/.mina-env
 ```
 
 Start a `tmux` session and start the Mina node:
