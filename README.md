@@ -20,7 +20,6 @@ docker run -it --rm --name mina --entrypoint bash -p 8302:8302 mina
 Generate a key pair and validate the pair:
 
 ```
-mkdir keys
 mina-generate-keypair --privkey-path /mina/keys/my-wallet
 mina-validate-keypair --privkey-path /mina/keys/my-wallet
 ```
@@ -39,5 +38,5 @@ tmux new -s daemon
 mina daemon
 ```
 
-You can exit the tmux session while leaving the daemon running by pressin `Cntl+b d`. Return the `tmux` session
+You can exit the tmux session while leaving the daemon running by pressing `Cntl+b d`. Return the `tmux` session
 running your daemon by running `tmux a -t daemon`.
