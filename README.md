@@ -1,9 +1,9 @@
-# Mina Protocol Node
+# [Mina Protocol](https://minaprotocol.com/) Playground
 
 This repo contains a Dockerfile with a fully configured environment for generating keypairs,
 developing, and running a Mina node. 
 
-## Getting Started
+## Starting the Mina Node
 
 First build the Docker environment:
 
@@ -40,3 +40,17 @@ mina daemon
 
 You can exit the tmux session while leaving the daemon running by pressing `Cntl+b d`. Return to the `tmux` session
 running your daemon by running `tmux a -t daemon`.
+
+## Starting a zkApp
+
+In your interactive session, check that the [zkapp-cli](https://github.com/o1-labs/zkapp-cli) is installed:
+
+```
+zk system
+```
+
+Start a new templated project with the cli:
+
+```
+zk project myproject
+```
