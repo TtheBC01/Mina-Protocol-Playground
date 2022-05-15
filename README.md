@@ -38,5 +38,5 @@ tmux new -s daemon
 mina daemon
 ```
 
-You can exit the tmux session while leaving the daemon running by pressing `Cntl+b d`. Return the `tmux` session
+You can exit the tmux session while leaving the daemon running by pressing `Cntl+b d`. Return to the `tmux` session
 running your daemon by running `tmux a -t daemon`.
